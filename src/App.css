@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Fixedsys";
+  src: local("FSEX300"), url("/fonts/FSEX300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "big-shot";
+  src: local("big-shot"), url("/fonts/big-shot.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.myroute::before {
+  content: " ";
+  background-color: white;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 11px;
+  left: -30px;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+ul {
+  list-style-position: inside;
+}
+
+li {
+  display: list-item;
+  text-indent: -1.3em;
+  margin-left: 1.3em;
+}
